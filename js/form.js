@@ -15,9 +15,9 @@ class Form{
 
     display(){
         this.title.html("Multiplayer Car Racing Game");
-        this.title.position(100,0);
-        this.input.position(130,160);
-        this.button.position(250,200);
+        this.title.position(displayWidth/2-90, 0);
+        this.input.position(displayWidth/2-40, displayHeight/2 - 80);
+        this.button.position(displayWidth/2 + 30, displayHeight/2);
 
         //Writing the function after the button is clicked
 
@@ -31,7 +31,7 @@ class Form{
             player.updateCount(playerCount);
             player.update();            
             this.greeting.html("Welcome " + player.name);
-            this.greeting.position(130,160);
+            this.greeting.position(displayWidth/2-70, displayHeight/4);
         })
     }
 }
